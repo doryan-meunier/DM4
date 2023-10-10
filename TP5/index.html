@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Map jQuery</title>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div>2 intéractions possibles</div><br>
+        <ul>
+            <li>Cliquez sur la map pour afficher le pays</li>
+            <li>Déplacez les blocs DIV pays sur la map pour recentrer la map sur un pays</li>
+        </ul>
+
+        <div id="map" class="ui-widget-header droppable"></div>
+
+        <div id="pays">
+            <div  class="ui-widget-content draggable">france</div>
+            <div  class="ui-widget-content draggable">canada</div>
+            <div  class="ui-widget-content draggable">Italie</div>
+            <div  class="ui-widget-content draggable">belgique</div>
+            <div class="ui-widget-content draggable">japan</div>
+            <div class="ui-widget-content draggable">localisation(GPS)</div>
+
+        </div>
+
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+        <script src="app.js"></script>
+    </body>
+
+</html>
